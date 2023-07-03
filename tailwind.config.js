@@ -14,6 +14,7 @@ module.exports = {
         blue: "hsl(198, 60%, 50%)",
         white: "hsl(0, 0%, 100%)",
         cyan: "hsl(176, 68%, 64%)",
+        lightcyan: "hsl(185, 64.1%, 69.4%)",
         lightred: "hsl(0, 100%, 63%)",
       },
       fontFamily: {
@@ -37,7 +38,7 @@ module.exports = {
       backgroundImage: {
         "curvy-desktop": "url('./assets/images/bg-curvy-desktop.svg')",
         "curvy-mobile": "url('./assets/images/bg-curvy-mobile.svg')",
-        "quotes": "url('./assets/images/bg-quotes.png')",
+        quotes: "url('./assets/images/bg-quotes.png')",
       },
       spacing: {
         128: "32rem",
@@ -47,6 +48,9 @@ module.exports = {
         "4xl": "2rem",
       },
     },
+  },
+  variants: {
+    fill: ["hover", "focus"], // this line does the trick
   },
   plugins: [],
 };

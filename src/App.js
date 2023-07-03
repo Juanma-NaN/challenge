@@ -8,6 +8,7 @@ import { items, testimonies } from "./assets/utils";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import Arrow from "./assets/images/icon-arrow.svg";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -54,13 +55,17 @@ function App() {
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required.
             </p>
-            <div className="flex w-fit items-end gap-2 border-b-[1px] border-cyan pb-1">
+            <div className="cursor-pointer flex w-fit items-end gap-2 border-b-[1px] border-cyan hover:text-white group hover:border-white pb-1">
               <a
                 href="google.com"
-                className="flex text-sm md:font-body mt-2 text-cyan"
+                className="flex text-sm md:font-body mt-2 text-cyan group-hover:text-white"
               >
                 See how Fylo works
-                <img alt="Arrow" className="pl-1 object-none" src={Arrow} />
+                <img
+                  alt="Arrow"
+                  className="pl-1 object-none group-hover:grayscale"
+                  src={Arrow}
+                />
               </a>
             </div>
           </div>
@@ -78,24 +83,7 @@ function App() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center px-6 md:px-20 bg-gradient-to-b from-darkblue2 from-50% to-darkblue-footer to-50% from">
-        <div className="flex flex-col items-center bg-darkblue1 py-8 md:py-12 px-8 md:px-[6rem] rounded-lg drop-shadow-2xl md:w-[950px]">
-          <p className="text-white text-center text-2xl md:text-6xl font-bold">
-            Get early access today
-          </p>
-          <p className="text-white text-center mt-6 max-w-[290px] md:max-w-[620px] text-base font-body">
-            It only takes a minute to sign up and our free starter tier is
-            extremely generous. If you have any questions, our support team
-            would be happy to help you.
-          </p>
-          <div className="flex flex-col w-full mt-10 justify-center items-center md:flex-row gap-4">
-            <input
-              className="text-sm w-full md:w-[90%] h-12 rounded-full px-8"
-              placeholder="
-            email@example.com"
-            />
-            <Button text="Get Started For Free" full={true} />
-          </div>
-        </div>
+        <Form />
       </div>
       <Footer />
     </div>

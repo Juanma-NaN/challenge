@@ -47,39 +47,39 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <a href="google.com" className="text-white font-body">
+            <a href="google.com" className="text-white font-body hover:font-bold">
               About Us
             </a>
-            <a href="google.com" className="text-white font-body">
+            <a href="google.com" className="text-white font-body hover:font-bold">
               Jobs
             </a>
-            <a href="google.com" className="text-white font-body">
+            <a href="google.com" className="text-white font-body hover:font-bold">
               Press
             </a>
-            <a href="google.com" className="text-white font-body">
+            <a href="google.com" className="text-white font-body hover:font-bold">
               Blog
             </a>
           </div>
           <div className="flex flex-col gap-4">
-            <a href="google.com" className="text-white font-body">
+            <a href="google.com" className="text-white font-body hover:font-bold">
               Contact Us
             </a>
-            <a href="google.com" className="text-white font-body">
+            <a href="google.com" className="text-white font-body hover:font-bold">
               Terms
             </a>
-            <a href="google.com" className="text-white font-body">
+            <a href="google.com" className="text-white font-body hover:font-bold">
               Privacy
             </a>
           </div>
           <div className="flex justify-center gap-3">
-            <div className="flex items-center justify-center w-9 h-9 p-1 rounded-full border-2 border-white">
-              <GrFacebookOption className="fill-white" />
+            <div className="flex items-center justify-center w-9 h-9 p-1 rounded-full border-2 border-white cursor-pointer group hover:border-cyan">
+              <GrFacebookOption className="fill-white group-hover:fill-cyan" />
             </div>
-            <div className="flex items-center justify-center w-9 h-9 p-2 rounded-full border-2 border-white">
-              <GrTwitter className="fill-white" />
+            <div className="flex items-center justify-center w-9 h-9 p-2 rounded-full border-2 border-white cursor-pointer group hover:border-cyan">
+              <GrTwitter className="fill-white group-hover:fill-cyan" />
             </div>
-            <div className="flex items-center justify-center w-9 h-9 p-2 rounded-full border-2 border-white">
-              <GrInstagram className="fill-white" />
+            <div className="flex items-center justify-center w-9 h-9 p-2 rounded-full border-2 border-white cursor-pointer group hover:border-cyan">
+              <GrInstagram className="fill-white group-hover:fill-cyan" />
             </div>
           </div>
         </div>
